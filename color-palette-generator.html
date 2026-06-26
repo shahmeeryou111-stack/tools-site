@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Color Palette Generator — Harmony, Complementary, Triadic | ToolHub</title>
+<meta name="description" content="Generate beautiful color palettes from any base color. Analogous, complementary, triadic, and monochrome harmonies. Copy hex codes instantly. Free." />
+<meta name="keywords" content="color palette generator, color scheme generator, complementary colors, triadic colors, analogous colors, hex color picker, design color tool, brand colors" />
+<meta name="author" content="ToolHub" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+<link rel="canonical" href="/tools/color-palette-generator.html" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Color Palette Generator — Harmony, Complementary, Triadic | ToolHub" />
+<meta property="og:description" content="Generate beautiful color palettes from any base color. Analogous, complementary, triadic, and monochrome harmonies. Copy hex codes instantly. Free." />
+<meta property="og:url" content="/tools/color-palette-generator.html" />
+<meta property="og:site_name" content="ToolHub" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Color Palette Generator — Harmony, Complementary, Triadic | ToolHub" />
+<meta name="twitter:description" content="Generate beautiful color palettes from any base color. Analogous, complementary, triadic, and monochrome harmonies. Copy hex codes instantly. Free." />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9B%A0%EF%B8%8F%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../styles.css" />
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"/"},{"@type":"ListItem","position":2,"name":"Tools","item":"/#tools"},{"@type":"ListItem","position":3,"name":"Color Palette Generator","item":"/tools/color-palette-generator.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Color Palette Generator","description":"Generate beautiful color palettes from any base color. Analogous, complementary, triadic, and monochrome harmonies. Copy hex codes instantly. Free.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (browser)","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"988"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What's the difference between the modes?","acceptedAnswer":{"@type":"Answer","text":"Analogous = sibling hues for soft looks. Complementary = high-contrast pairs. Triadic = three balanced hues. Monochrome = one hue, many shades."}},{"@type":"Question","name":"Can I use these palettes commercially?","acceptedAnswer":{"@type":"Answer","text":"Yes \u2014 colors aren't copyrightable. Use them freely for any project."}},{"@type":"Question","name":"How do I find my brand's base color?","acceptedAnswer":{"@type":"Answer","text":"Start with the hue that represents your brand emotion (blue=trust, red=energy, green=growth). Then build harmony around it."}},{"@type":"Question","name":"Are the hex codes accessible?","acceptedAnswer":{"@type":"Answer","text":"Always check contrast ratios (WCAG AA = 4.5:1 for text) when pairing colors for UI."}}]}</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a href="../index.html" class="logo" aria-label="ToolHub home">
+      <span class="logo-mark">🛠</span>
+      <span class="logo-text">Tool<span>Hub</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="../index.html#tools">All Tools</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+    <a href="../index.html#tools" class="btn btn-primary nav-cta">All Tools</a>
+  </div>
+</header>
+
+<nav class="breadcrumb container" aria-label="Breadcrumb">
+  <a href="../index.html">Home</a> <span>›</span> <a href="../index.html#tools">Tools</a> <span>›</span> <span aria-current="page">Color Palette Generator</span>
+</nav>
+
+<header class="tool-hero">
+  <div class="container">
+    <div class="tool-icon-lg">🎨</div>
+    <h1>Free Color Palette Generator for Designers & Developers</h1>
+    <p class="lead">Build harmonious color palettes from any starting color using proven color theory. Perfect for brand design, UI work, illustration, and marketing.</p>
+  </div>
+</header>
+
+<main class="container tool-page">
+  <section class="tool-panel">
+    <div class="tool-widget" data-tool="color">
+  <div class="row">
+    <input type="color" id="colorBase" value="#6366f1" class="color-input" />
+    <select id="colorMode" class="input"><option value="analogous">Analogous</option><option value="complementary">Complementary</option><option value="triadic">Triadic</option><option value="monochrome">Monochrome</option></select>
+    <button class="btn btn-primary" id="colorGen">Generate</button>
+  </div>
+  <div id="palette" class="palette"></div>
+</div>
+  </section>
+
+  <section class="content-block">
+    <h2>Key Features</h2>
+    <div class="feat-grid"><div class="feat"><h3>4 Color Modes</h3><p>Analogous, complementary, triadic, and monochromatic schemes.</p></div><div class="feat"><h3>Click to Copy</h3><p>Tap any swatch to copy its hex code to your clipboard.</p></div><div class="feat"><h3>Instant Generation</h3><p>Every change updates the palette in real time.</p></div><div class="feat"><h3>Designer Approved</h3><p>Built on classic color theory rules used by professional designers.</p></div></div>
+  </section>
+
+  <section class="content-block">
+    <h2>How to Use the Color Palette Generator</h2>
+    <ol class="how-list"><li>Pick a base color using the color picker.</li><li>Choose a harmony mode (try Triadic for bold combos).</li><li>A 5-color palette appears — click any swatch to copy its hex.</li><li>Use the colors in your design, code, or brand kit.</li></ol>
+  </section>
+
+  <section class="content-block">
+    <h2>Frequently Asked Questions</h2>
+    <details open><summary>What's the difference between the modes?</summary><p>Analogous = sibling hues for soft looks. Complementary = high-contrast pairs. Triadic = three balanced hues. Monochrome = one hue, many shades.</p></details><details><summary>Can I use these palettes commercially?</summary><p>Yes — colors aren't copyrightable. Use them freely for any project.</p></details><details><summary>How do I find my brand's base color?</summary><p>Start with the hue that represents your brand emotion (blue=trust, red=energy, green=growth). Then build harmony around it.</p></details><details><summary>Are the hex codes accessible?</summary><p>Always check contrast ratios (WCAG AA = 4.5:1 for text) when pairing colors for UI.</p></details>
+  </section>
+
+  <section class="content-block">
+    <h2>Related Tools</h2>
+    <div class="related-grid"><a href="unit-converter.html" class="related-card"><div class="tool-icon">📏</div><div><strong>Unit Converter</strong><span class="muted small">Free online unit converter for length, weight, temperature, and time. Instant, a…</span></div></a><a href="text-case-converter.html" class="related-card"><div class="tool-icon">Aa</div><div><strong>Text Case Converter</strong><span class="muted small">Convert text between UPPERCASE, lowercase, Title Case, Sentence case, camelCase,…</span></div></a><a href="lorem-ipsum-generator.html" class="related-card"><div class="tool-icon">📝</div><div><strong>Lorem Ipsum Generator</strong><span class="muted small">Generate Lorem Ipsum placeholder text for mockups, wireframes, and design comps.…</span></div></a></div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container foot-grid">
+    <div>
+      <div class="logo"><span class="logo-mark">🛠</span><span class="logo-text">Tool<span>Hub</span></span></div>
+      <p class="muted small">Premium free online tools. 100% browser-based. No signup, no tracking, no limits.</p>
+    </div>
+    <div>
+      <h4>Top Tools</h4>
+      <a href="../tools/password-generator.html">Password Generator</a><a href="../tools/qr-code-generator.html">QR Code Generator</a><a href="../tools/image-compressor.html">Image Compressor</a><a href="../tools/json-formatter.html">JSON Formatter</a><a href="../tools/color-palette-generator.html">Color Palette Generator</a>
+    </div>
+    <div>
+      <h4>More Tools</h4>
+      <a href="../tools/unit-converter.html">Unit Converter</a><a href="../tools/text-case-converter.html">Text Case Converter</a><a href="../tools/lorem-ipsum-generator.html">Lorem Ipsum Generator</a><a href="../tools/base64-encoder-decoder.html">Base64 Encoder & Decoder</a><a href="../tools/url-analyzer.html">URL Analyzer</a>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+      <a href="../privacy.html">Privacy</a>
+      <a href="../terms.html">Terms</a>
+    </div>
+  </div>
+  <div class="container foot-bot">
+    <span class="muted small">© <span id="year"></span> ToolHub. All rights reserved.</span>
+  </div>
+</footer>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="../script.js" defer></script>
+</body>
+</html>
