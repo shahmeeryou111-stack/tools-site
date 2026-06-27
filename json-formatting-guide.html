@@ -1,0 +1,85 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>JSON Formatting: A Developer's Complete Guide | ToolHub</title>
+<meta name="description" content="JSON is everywhere — APIs, configs, logs. Learn the rules, common pitfalls, and how to format, validate and minify JSON safely."/>
+<meta name="robots" content="index,follow,max-image-preview:large"/>
+<link rel="canonical" href="/articles/json-formatting-guide.html"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="JSON Formatting: A Developer's Complete Guide | ToolHub"/>
+<meta property="og:description" content="JSON is everywhere — APIs, configs, logs. Learn the rules, common pitfalls, and how to format, validate and minify JSON safely."/>
+<meta property="og:url" content="/articles/json-formatting-guide.html"/>
+<meta property="og:site_name" content="ToolHub"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="JSON Formatting: A Developer's Complete Guide | ToolHub"/>
+<meta name="twitter:description" content="JSON is everywhere — APIs, configs, logs. Learn the rules, common pitfalls, and how to format, validate and minify JSON safely."/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9B%A0%EF%B8%8F%3C/text%3E%3C/svg%3E"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../styles.css"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "JSON Formatting: A Developer's Complete Guide", "description": "JSON is everywhere \u2014 APIs, configs, logs. Learn the rules, common pitfalls, and how to format, validate and minify JSON safely.", "datePublished": "2026-06-27", "author": {"@type": "Organization", "name": "ToolHub"}, "publisher": {"@type": "Organization", "name": "ToolHub"}}</script>
+</head><body><header class="site-header"><div class="container nav">
+<a href="../index.html" class="logo" aria-label="ToolHub home"><span class="logo-mark">🛠</span><span class="logo-text">Tool<span>Hub</span></span></a>
+<nav class="nav-links" aria-label="Primary">
+<a href="../index.html">Tools</a>
+<a href="../articles/index.html">Articles</a>
+<a href="../about.html">About</a>
+<a href="../contact.html">Contact</a>
+</nav>
+<a href="../index.html" class="btn btn-primary nav-cta">All Tools</a>
+</div></header><main class="container article">
+<div class="crumbs"><a href="../index.html">Home</a> &rsaquo; <a href="index.html">Articles</a> &rsaquo; <span>JSON Formatting: A Developer's Complete Guide</span></div>
+<h1>JSON Formatting: A Developer's Complete Guide</h1>
+<p class="article-meta">By ToolHub Editorial &middot; June 27, 2026 &middot; 6 min read</p>
+<p><b>JSON is everywhere — APIs, configs, logs. Learn the rules, common pitfalls, and how to format, validate and minify JSON safely.</b></p>
+<h2>Why JSON is everywhere</h2>
+<p>JSON (JavaScript Object Notation) is the lingua franca of the modern web. APIs return it, configs use it, databases store it, logs emit it. Despite its simplicity, syntax mistakes constantly trip up developers — especially when JSON is hand-edited.</p>
+<h2>The complete syntax rules</h2>
+<ul><li>Six value types: <code>string</code>, <code>number</code>, <code>boolean</code>, <code>null</code>, <code>array</code>, <code>object</code>. That's it.</li>
+<li>Strings must use <b>double quotes</b>, never single.</li>
+<li>Object keys must be <b>quoted strings</b>.</li>
+<li>No trailing commas: <code>{"a":1,}</code> is invalid.</li>
+<li>No comments. Anything that looks like <code>//</code> or <code>/* */</code> is invalid.</li>
+<li>No functions, no <code>undefined</code>, no dates as native values — only the six types above.</li></ul>
+<h2>Common mistakes and how to spot them</h2>
+<ol><li><b>Trailing comma.</b> "Unexpected token } in JSON at position X" — check the character before the closing brace.</li>
+<li><b>Single quotes.</b> "Unexpected token ' in JSON" — Find/Replace <code>'</code> with <code>"</code>.</li>
+<li><b>Unquoted keys.</b> Common when copy-pasting from JavaScript object literals.</li>
+<li><b>JavaScript values.</b> <code>undefined</code> isn't JSON; use <code>null</code> or omit the key.</li>
+<li><b>Mismatched brackets.</b> A formatter shows the structure visually so misplaced brackets jump out.</li></ol>
+<h2>Format vs minify</h2>
+<p><b>Format</b> (pretty-print) adds indentation and newlines. Use during development, code review, debugging.</p>
+<p><b>Minify</b> strips every space and newline. Use in production — APIs, HTML embedding, anywhere bytes matter. A typical config can shrink 40–60% just from minification.</p>
+<h2>JSON Schema for validation</h2>
+<p>When JSON is exchanged between systems, a contract is essential. JSON Schema lets you define the expected shape — required fields, types, ranges, enums — and reject malformed payloads at the boundary. Worth adopting for any production API.</p>
+<h2>Try our formatter</h2>
+<p>Paste any JSON into our <a href="../tools/json-formatter.html">free JSON formatter & validator</a> — it pretty-prints valid JSON and pinpoints the line of any syntax error.</p>
+<hr/>
+<p class="muted small">Found this useful? Share it. Have feedback? <a href="../contact.html">Tell us</a>.</p>
+</main><footer class="site-footer"><div class="container foot-grid">
+<div><div class="logo"><span class="logo-mark">🛠</span><span class="logo-text">Tool<span>Hub</span></span></div>
+<p class="muted small">Free, private, lightning-fast online tools for developers, designers and creators.</p></div>
+<div><h4>Popular Tools</h4>
+<a href="../tools/password-generator.html">Password Generator</a>
+<a href="../tools/qr-code-generator.html">QR Code Generator</a>
+<a href="../tools/image-compressor.html">Image Compressor</a>
+<a href="../tools/json-formatter.html">JSON Formatter</a>
+<a href="../tools/color-palette-generator.html">Color Palette</a></div>
+<div><h4>More Tools</h4>
+<a href="../tools/unit-converter.html">Unit Converter</a>
+<a href="../tools/text-case-converter.html">Text Case Converter</a>
+<a href="../tools/lorem-ipsum-generator.html">Lorem Ipsum</a>
+<a href="../tools/base64-encoder.html">Base64 Encoder</a>
+<a href="../tools/url-analyzer.html">URL Analyzer</a></div>
+<div><h4>Company</h4>
+<a href="../about.html">About</a>
+<a href="../contact.html">Contact</a>
+<a href="../privacy.html">Privacy Policy</a>
+<a href="../terms.html">Terms of Service</a>
+<a href="../articles/index.html">Articles</a></div>
+</div>
+<div class="container foot-bot"><span class="muted small">© <span id="year"></span> ToolHub. All rights reserved.</span></div>
+</footer>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="../script.js" defer></script></body></html>
